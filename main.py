@@ -3,7 +3,7 @@ from send_mail import send_mail
 
 
 api_key = "9833cb1d8c24473a9679aa208c09dca2"
-url = f"https://newsapi.org/v2/everything?q=bitcoin&sortBy=publishedAt&apiKey={api_key}"
+url = f"https://newsapi.org/v2/everything?q=bitcoin&sortBy=publishedAt&language=en&apiKey={api_key}"
 
 # Make request
 request = requests.get(url)
