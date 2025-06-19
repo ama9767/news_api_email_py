@@ -10,6 +10,9 @@ def send_mail(message):
     password = os.getenv("PASSWORD")
     receiver = "amamazikee@gmail.com"
     msg = MIMEText(message, "plain", "utf-8")
+    msg["Subject"] = "Today's Python News"
+    msg["From"] = username
+    msg["To"] = receiver
     context = ssl.create_default_context()
 
     with smtplib.SMTP_SSL(host, port, context=context) as server:
