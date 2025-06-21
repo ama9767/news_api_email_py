@@ -2,7 +2,7 @@ import requests
 from send_mail import send_mail
 
 
-api_key = "9833cb1d8c24473a9679aa208c09dca2"
+api_key = "."
 url = f"https://newsapi.org/v2/everything?q=python&sortBy=publishedAt&language=en&apiKey={api_key}"
 
 # Make request
